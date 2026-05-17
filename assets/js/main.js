@@ -13,6 +13,8 @@
     initYear();
     initNewsletter();
     initQuoteForm();
+    initHeroQuickQuote();
+    initQuotePrefill();
   });
 
   /* Sticky header — shadow on scroll */
@@ -319,6 +321,49 @@
       const first = form.elements['name'];
       first && first.focus();
     });
+  }
+
+  /* Hero quick-quote — hand off From/To/Mode to quote.html via query string */
+  function initHeroQuickQuote() {
+    const form = document.getElementById('hero-quick-quote');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const params = new URLSearchParams();
+      const map = { from: 'origin', to: 'destination', mode: 'mode' };
+      for (const [k, v] of data.entries()) {
+        const target = map[k] || k;
+        if (v) params.set(target, v);
+      }
+      const qs = params.toString();
+      location.href = 'quote.html' + (qs ? '?' + qs : '');
+    });
+  }
+
+  /* Quote page — prefill fields from the hero hand-off query string */
+  function initQuotePrefill() {
+    if (!/quote\.html$/.test(location.pathname)) return;
+    const params = new URLSearchParams(location.search);
+    if (![...params.keys()].length) return;
+    let focused = false;
+    for (const [k, v] of params.entries()) {
+      const el = document.querySelector('[name="' + cssEscape(k) + '"]');
+      if (!el) continue;
+      if (el.type === 'radio' || el.tagName === 'INPUT' && el.matches('[type=radio]')) {
+        const radio = document.querySelector('[name="' + cssEscape(k) + '"][value="' + cssEscape(v) + '"]');
+        if (radio) radio.checked = true;
+      } else {
+        el.value = v;
+      }
+      if (!focused && el.focus) {
+        try { el.focus({ preventScroll: true }); } catch (_) { el.focus(); }
+        focused = true;
+      }
+    }
+  }
+  function cssEscape(s) {
+    return String(s).replace(/["\\]/g, '\\$&');
   }
 
   /* Utils */

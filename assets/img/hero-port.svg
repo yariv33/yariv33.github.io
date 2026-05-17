@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Container ship at a port during golden hour">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD9B5"/>
+      <stop offset="35%" stop-color="#FFC09A"/>
+      <stop offset="70%" stop-color="#F0916A"/>
+      <stop offset="100%" stop-color="#C9603A"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="74%" cy="38%" r="22%">
+      <stop offset="0%"  stop-color="#FFFBF0" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#FFE0BB" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFE0BB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#A55326"/>
+      <stop offset="55%" stop-color="#6E2F12"/>
+      <stop offset="100%" stop-color="#3E180A"/>
+    </linearGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD9B5" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFC09A" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="shipShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#1E2B3A"/>
+      <stop offset="100%" stop-color="#0A111B"/>
+    </linearGradient>
+    <linearGradient id="craneShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A2515"/>
+      <stop offset="100%" stop-color="#1C0F07"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="640" fill="url(#sky)"/>
+  <!-- Sun bloom -->
+  <rect width="1600" height="640" fill="url(#sun)"/>
+  <circle cx="1184" cy="342" r="58" fill="#FFFBF0" opacity="0.85"/>
+  <circle cx="1184" cy="342" r="92" fill="#FFE9CB" opacity="0.35"/>
+
+  <!-- Distant haze band -->
+  <rect y="420" width="1600" height="240" fill="url(#haze)"/>
+
+  <!-- Far port silhouette (light, hazy) -->
+  <g fill="#A55326" opacity="0.35">
+    <rect x="0"    y="500" width="1600" height="4"/>
+  </g>
+  <g fill="#7A370F" opacity="0.32">
+    <!-- distant cranes -->
+    <g transform="translate(60,440)">
+      <rect x="0" y="0" width="4" height="80"/>
+      <rect x="0" y="0" width="48" height="4"/>
+      <rect x="44" y="0" width="4" height="22"/>
+    </g>
+    <g transform="translate(140,432)">
+      <rect x="0" y="0" width="4" height="88"/>
+      <rect x="0" y="0" width="56" height="4"/>
+      <rect x="52" y="0" width="4" height="22"/>
+    </g>
+    <g transform="translate(232,438)">
+      <rect x="0" y="0" width="4" height="82"/>
+      <rect x="0" y="0" width="50" height="4"/>
+      <rect x="46" y="0" width="4" height="22"/>
+    </g>
+    <g transform="translate(320,428)">
+      <rect x="0" y="0" width="4" height="92"/>
+      <rect x="0" y="0" width="60" height="4"/>
+      <rect x="56" y="0" width="4" height="24"/>
+    </g>
+    <g transform="translate(420,436)">
+      <rect x="0" y="0" width="4" height="84"/>
+      <rect x="0" y="0" width="52" height="4"/>
+      <rect x="48" y="0" width="4" height="22"/>
+    </g>
+    <g transform="translate(1380,438)">
+      <rect x="0" y="0" width="4" height="82"/>
+      <rect x="0" y="0" width="50" height="4"/>
+      <rect x="46" y="0" width="4" height="22"/>
+    </g>
+    <g transform="translate(1480,432)">
+      <rect x="0" y="0" width="4" height="88"/>
+      <rect x="0" y="0" width="56" height="4"/>
+      <rect x="52" y="0" width="4" height="22"/>
+    </g>
+  </g>
+
+  <!-- Mid-distance container stacks at port (silhouette) -->
+  <g opacity="0.55">
+    <g transform="translate(70,520)">
+      <rect width="50" height="22" fill="#5A2A12"/>
+      <rect x="52" width="50" height="22" fill="#3E180A"/>
+      <rect x="104" width="50" height="22" fill="#5A2A12"/>
+      <rect y="-22" width="50" height="22" fill="#3E180A"/>
+      <rect x="52" y="-22" width="50" height="22" fill="#5A2A12"/>
+    </g>
+    <g transform="translate(260,520)">
+      <rect width="50" height="22" fill="#3E180A"/>
+      <rect x="52" width="50" height="22" fill="#5A2A12"/>
+      <rect x="104" width="50" height="22" fill="#3E180A"/>
+      <rect x="156" width="50" height="22" fill="#5A2A12"/>
+      <rect y="-22" width="50" height="22" fill="#5A2A12"/>
+      <rect x="52" y="-22" width="50" height="22" fill="#3E180A"/>
+      <rect x="104" y="-22" width="50" height="22" fill="#5A2A12"/>
+    </g>
+    <g transform="translate(1320,520)">
+      <rect width="50" height="22" fill="#5A2A12"/>
+      <rect x="52" width="50" height="22" fill="#3E180A"/>
+      <rect x="104" width="50" height="22" fill="#5A2A12"/>
+      <rect y="-22" width="50" height="22" fill="#3E180A"/>
+      <rect x="52" y="-22" width="50" height="22" fill="#5A2A12"/>
+    </g>
+  </g>
+
+  <!-- Foreground large gantry crane (left) -->
+  <g fill="url(#craneShade)">
+    <rect x="115" y="240" width="10" height="320"/>
+    <rect x="160" y="240" width="10" height="320"/>
+    <!-- crossbeam top -->
+    <rect x="100" y="240" width="86" height="10"/>
+    <!-- boom -->
+    <rect x="100" y="270" width="220" height="8"/>
+    <!-- counterweight -->
+    <rect x="60"  y="270" width="60" height="14"/>
+    <!-- cable -->
+    <rect x="240" y="278" width="2" height="80"/>
+    <rect x="232" y="356" width="20" height="12" fill="#231308"/>
+  </g>
+
+  <!-- Container ship hull -->
+  <g>
+    <!-- shadow halo under ship on water -->
+    <ellipse cx="900" cy="700" rx="640" ry="22" fill="#000" opacity="0.35"/>
+    <!-- hull -->
+    <path d="M380 600 L1450 600 L1390 700 L440 700 Z" fill="url(#shipShade)"/>
+    <!-- waterline highlight -->
+    <path d="M380 600 L1450 600" stroke="#FFB877" stroke-width="1.5" opacity="0.45" fill="none"/>
+    <!-- bridge / superstructure -->
+    <rect x="1180" y="470" width="170" height="130" fill="#19232F"/>
+    <rect x="1240" y="430" width="80" height="40" fill="#202D3D"/>
+    <rect x="1258" y="395" width="14" height="35" fill="#202D3D"/>
+    <rect x="1290" y="405" width="10" height="25" fill="#202D3D"/>
+    <!-- bridge windows row -->
+    <g fill="#F0916A" opacity="0.55">
+      <rect x="1192" y="486" width="146" height="6"/>
+      <rect x="1192" y="502" width="146" height="3"/>
+    </g>
+
+    <!-- container deck — multiple stacks -->
+    <g>
+      <!-- stack 1 -->
+      <g transform="translate(420,500)">
+        <rect width="60" height="22" fill="#E8843C"/>
+        <rect x="62" width="60" height="22" fill="#D86F1F"/>
+        <rect x="124" width="60" height="22" fill="#E8843C"/>
+        <rect x="186" width="60" height="22" fill="#1A2331"/>
+        <rect y="-24" width="60" height="22" fill="#D86F1F"/>
+        <rect x="62" y="-24" width="60" height="22" fill="#1A2331"/>
+        <rect x="124" y="-24" width="60" height="22" fill="#E8843C"/>
+        <rect x="186" y="-24" width="60" height="22" fill="#D86F1F"/>
+        <rect y="-48" width="60" height="22" fill="#1A2331"/>
+        <rect x="62" y="-48" width="60" height="22" fill="#E8843C"/>
+        <rect x="124" y="-48" width="60" height="22" fill="#D86F1F"/>
+      </g>
+      <!-- stack 2 -->
+      <g transform="translate(700,490)">
+        <rect width="60" height="22" fill="#1A2331"/>
+        <rect x="62" width="60" height="22" fill="#E8843C"/>
+        <rect x="124" width="60" height="22" fill="#D86F1F"/>
+        <rect x="186" width="60" height="22" fill="#E8843C"/>
+        <rect x="248" width="60" height="22" fill="#1A2331"/>
+        <rect y="-24" width="60" height="22" fill="#E8843C"/>
+        <rect x="62" y="-24" width="60" height="22" fill="#D86F1F"/>
+        <rect x="124" y="-24" width="60" height="22" fill="#1A2331"/>
+        <rect x="186" y="-24" width="60" height="22" fill="#E8843C"/>
+        <rect x="248" y="-24" width="60" height="22" fill="#D86F1F"/>
+        <rect y="-48" width="60" height="22" fill="#D86F1F"/>
+        <rect x="62" y="-48" width="60" height="22" fill="#1A2331"/>
+        <rect x="124" y="-48" width="60" height="22" fill="#E8843C"/>
+        <rect x="186" y="-48" width="60" height="22" fill="#D86F1F"/>
+        <rect y="-72" width="60" height="22" fill="#E8843C"/>
+        <rect x="62" y="-72" width="60" height="22" fill="#1A2331"/>
+        <rect x="124" y="-72" width="60" height="22" fill="#D86F1F"/>
+      </g>
+      <!-- stack 3 (front of bridge) -->
+      <g transform="translate(1020,500)">
+        <rect width="60" height="22" fill="#E8843C"/>
+        <rect x="62" width="60" height="22" fill="#1A2331"/>
+        <rect x="124" width="60" height="22" fill="#D86F1F"/>
+        <rect y="-24" width="60" height="22" fill="#1A2331"/>
+        <rect x="62" y="-24" width="60" height="22" fill="#D86F1F"/>
+        <rect x="124" y="-24" width="60" height="22" fill="#E8843C"/>
+        <rect y="-48" width="60" height="22" fill="#D86F1F"/>
+        <rect x="62" y="-48" width="60" height="22" fill="#E8843C"/>
+      </g>
+    </g>
+
+    <!-- bow wake left -->
+    <path d="M440 700 Q 380 712 320 706" stroke="#FFE0CC" stroke-width="2.4" opacity="0.5" fill="none"/>
+    <path d="M460 706 Q 400 716 340 712" stroke="#FFE0CC" stroke-width="1.6" opacity="0.32" fill="none"/>
+    <!-- stern wake right -->
+    <path d="M1390 700 Q 1440 712 1500 706" stroke="#FFE0CC" stroke-width="2.4" opacity="0.5" fill="none"/>
+    <path d="M1370 706 Q 1430 716 1490 712" stroke="#FFE0CC" stroke-width="1.6" opacity="0.32" fill="none"/>
+  </g>
+
+  <!-- Water -->
+  <rect y="640" width="1600" height="260" fill="url(#water)"/>
+  <!-- Water sun reflection -->
+  <g opacity="0.55" filter="url(#soft)">
+    <path d="M1080 640 L1290 640 L1230 880 L1140 880 Z" fill="#FFB877" opacity="0.4"/>
+    <path d="M1130 660 L1240 660 L1210 880 L1160 880 Z" fill="#FFE0CC" opacity="0.45"/>
+  </g>
+  <!-- Water ripple lines -->
+  <g stroke="#FFB877" stroke-width="1" opacity="0.35" fill="none">
+    <path d="M0 700 Q 400 695 800 700 T 1600 700"/>
+    <path d="M0 730 Q 400 726 800 730 T 1600 730"/>
+    <path d="M0 762 Q 400 758 800 762 T 1600 762"/>
+    <path d="M0 800 Q 400 796 800 800 T 1600 800"/>
+    <path d="M0 842 Q 400 838 800 842 T 1600 842"/>
+  </g>
+
+  <!-- Foreground silhouette on right (dock edge) -->
+  <g fill="#1A0E06" opacity="0.65">
+    <rect x="1480" y="600" width="120" height="100"/>
+    <rect x="1500" y="560" width="14" height="40"/>
+    <rect x="1530" y="540" width="14" height="60"/>
+    <rect x="1560" y="565" width="14" height="35"/>
+  </g>
+
+  <!-- Subtle atmospheric haze top -->
+  <rect width="1600" height="200" fill="#FFE9CB" opacity="0.18"/>
+</svg>
